@@ -20,3 +20,5 @@ defaults:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-money
+  - jekyll-sitemap
