@@ -1,0 +1,8 @@
+- name: Home
+  link: /
+- name: Propiedades
+  link: /propiedades.html
+- name: Venta
+  link: /venta.html
+- name: Renta
+  link: /renta.html

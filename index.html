@@ -1,0 +1,104 @@
+---
+layout: default
+title: Home
+---
+<!-- ***** Welcome Area Start ***** -->
+<section class="dorne-welcome-area bg-img bg-overlay" style="background-image: url(/img/portada.jpg);">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center">
+            <div class="col-12 col-md-10">
+                <div class="hero-content">
+                    <h2>MARAZUL</h2>
+                    <h4>Venta y renta de inmobiliario en Acapulco</h4>
+                </div>
+                <!-- Hero Search Form -->
+                <div class="hero-search-form">
+                    <!-- Tabs -->
+                    <!-- <div class="nav nav-tabs" id="heroTab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-places-tab" data-toggle="tab" href="#nav-places" role="tab" aria-controls="nav-places" aria-selected="true">Venta</a>
+                        <a class="nav-item nav-link" id="nav-events-tab" data-toggle="tab" href="#nav-events" role="tab" aria-controls="nav-events" aria-selected="false">Renta</a>
+                    </div> -->
+                    <!-- Tabs Content -->
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-places" role="tabpanel" aria-labelledby="nav-places-tab">
+                            <h6>Qué estás buscando?</h6>
+                            <form class="row tipue_search_group" action="#results" method="get">
+                                <input type="text" class="search-bar" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required="">
+                                <button type="submit" class="dorne-btn tipue_search_button"><i class="fa fa-search pr-2" aria-hidden="true"></i> Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Welcome Area End ***** -->
+
+<!-- Search results... -->
+<section id="results">
+  <div class="container-fluid "id="tipue_search_content"></div>
+</section>
+<!-- Search results... END -->
+
+<!-- ***** Editor Pick Area Start ***** -->
+<section class="dorne-editors-pick-area bg-img bg-overlay-9 section-padding-100" style="background-image: url(img/aca_2.jpeg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading text-center">
+                    <span></span>
+                    <h4>Propiedades destacadas</h4>
+                    <p>Nuevas adiciones</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="single-editors-pick-area wow fadeInUp outer-div-left" data-wow-delay="0.2s">
+                  <div class="inner-div">
+                    <a href="{{ site.posts[0].url }}">
+                    <img src="{{site.posts[0].imagenes[0]}}" alt="">
+                    </a>
+                  </div>
+                    <div class="editors-pick-info">
+                        <div class="places-total-destinations d-flex">
+                            <a href="#">{{site.posts[0].title}}</a>
+                            <a href="#">{{ site.posts[0].status }}  {{site.posts[0].precio | money }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="single-editors-pick-area wow fadeInUp outer-div-right" data-wow-delay="0.4s">
+                  <div class="inner-div">
+                    <a href="{{ site.posts[1].url }}">
+                    <img src="{{site.posts[1].imagenes[0]}}" alt="">
+                    </a>
+                  </div>
+                    <div class="editors-pick-info">
+                        <div class="places-total-destinations d-flex">
+                          <a href="#">{{site.posts[1].title}}</a>
+                          <a href="#">{{ site.posts[1].status }}  {{site.posts[1].precio | money }}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-editors-pick-area wow fadeInUp outer-div-right" data-wow-delay="0.6s">
+                  <div class="inner-div">
+                    <a href="{{ site.posts[2].url }}">
+                    <img src="{{site.posts[2].imagenes[2]}}" alt="">
+                    </a>
+                  </div>
+                    <div class="editors-pick-info">
+                        <div class="places-total-destinations d-flex">
+                          <a href="#">{{site.posts[2].title}}</a>
+                          <a href="#">{{ site.posts[2].status }}  {{site.posts[2].precio | money }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Editor Pick Area End ***** -->

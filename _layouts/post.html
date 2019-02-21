@@ -1,0 +1,225 @@
+---
+layout: default
+---
+<!-- ***** Breadcumb Area Start ***** -->
+<div class="breadcumb-area bg-img bg-overlay" style="background-image: url(/img/portada.jpg)"></div>
+<!-- ***** Breadcumb Area End ***** -->
+
+<!-- ***** Single Listing Area Start ***** -->
+<section class="dorne-single-listing-area section-padding-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Single Listing Content -->
+            <div class="col-12 col-lg-8">
+                <div class="single-listing-content">
+
+                    <div class="listing-title">
+                        <h4>{{ page.title }}</h4>
+                        <h6>
+                          <a href="{{page.direccion_google}}" target="_blank">
+                            {{ page.direccion }}
+                          </a>
+                      </h6>
+                    </div>
+
+                    <!-- Carrusel time -->
+                    <div class="overview-content mt-50" id="description">
+                      <div id="carrusel" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                          {% for imagen in page.imagenes %}
+                          <li data-target="#carrusel" data-slide-to="{{ forloop.index | minus: 1 }}" {% if forloop.index == 1 %} class="active" {% endif %}></li>
+                          {% endfor %}
+
+                        </ul>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                          {% for imagen in page.imagenes %}
+                          <div {% if forloop.index == 1 %} class="carousel-item active" {% else %} class="carousel-item"  {% endif %} >
+                            <a href="{{imagen}}" data-fancybox="gallery"><img src="{{imagen}}" alt="imagen_no_encontrada" class="img-fluid"></a>
+                          </div>
+                          {% endfor %}
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#carrusel" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carrusel" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- Carrusel time END -->
+
+                    <div class="single-listing-nav">
+                        <nav>
+                            <ul id="listingNav">
+                                <li class="active"><a href="#description">Descripción</a></li>
+                                <li><a href="#detalles">Detalles</a></li>
+                                <li><a href="#superficie">Superficie</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="overview-content mt-50" id="description">
+                        <p>
+                          {{ content }}
+                        </p>
+                    </div>
+
+                    <div class="listing-menu-area mt-100" id="detalles">
+                        <h4>Detalles</h4>
+                        <!-- Single Listing Menu -->
+                        <div class="single-listing-menu d-flex justify-content-between">
+                            <!-- Listing Menu Title -->
+                            <div class="listing-menu-title">
+                                <h6>No. Dormitorios</h6>
+                            </div>
+                            <!-- Listing Menu Price -->
+                            <div class="listing-menu-price">
+                                <h6>{{page.dormitorios}}</h6>
+                            </div>
+                        </div>
+                        <!-- Single Listing Menu -->
+                        <div class="single-listing-menu d-flex justify-content-between">
+                            <!-- Listing Menu Title -->
+                            <div class="listing-menu-title">
+                                <h6>No. Baños</h6>
+                            </div>
+                            <!-- Listing Menu Price -->
+                            <div class="listing-menu-price">
+                                <h6>{{page.banos}}</h6>
+                            </div>
+                        </div>
+                        <!-- Single Listing Menu -->
+                        <div class="single-listing-menu d-flex justify-content-between">
+                            <!-- Listing Menu Title -->
+                            <div class="listing-menu-title">
+                                <h6>No. Pisos</h6>
+                            </div>
+                            <!-- Listing Menu Price -->
+                            <div class="listing-menu-price">
+                                <h6>{{page.pisos}}</h6>
+                            </div>
+                        </div>
+                        <!-- Single Listing Menu -->
+                        <div class="single-listing-menu d-flex justify-content-between">
+                            <!-- Listing Menu Title -->
+                            <div class="listing-menu-title">
+                                <h6>Lugares de Estacionamiento</h6>
+                            </div>
+                            <!-- Listing Menu Price -->
+                            <div class="listing-menu-price">
+                                <h6>{{page.estacionamiento}}</h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="listing-menu-area mt-100" id="superficie">
+                        <h4>Superficie</h4>
+                        <!-- Single Listing Menu -->
+                        <div class="single-listing-menu d-flex justify-content-between">
+                            <!-- Listing Menu Title -->
+                            <div class="listing-menu-title">
+                                <h6>Superficie</h6>
+                            </div>
+                            <!-- Listing Menu Price -->
+                            <div class="listing-menu-price">
+                                <h6>{{page.superficie}}</h6>
+                            </div>
+                        </div>
+                        <!-- Single Listing Menu -->
+                        <div class="single-listing-menu d-flex justify-content-between">
+                            <!-- Listing Menu Title -->
+                            <div class="listing-menu-title">
+                                <h6>Superficie Cubierta</h6>
+                            </div>
+                            <!-- Listing Menu Price -->
+                            <div class="listing-menu-price">
+                                <h6>{{page.superficie_cubierta}}</h6>
+                            </div>
+                        </div>
+                        <!-- Single Listing Menu -->
+                        <div class="single-listing-menu d-flex justify-content-between">
+                            <!-- Listing Menu Title -->
+                            <div class="listing-menu-title">
+                                <h6>Superficie Descubierta</h6>
+                            </div>
+                            <!-- Listing Menu Price -->
+                            <div class="listing-menu-price">
+                                <h6>{{page.superficie_descubierta}}</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Listing Sidebar -->
+            <div class="col-12 col-md-8 col-lg-4">
+                <div class="listing-sidebar">
+
+                    <!-- Listing Verify -->
+                    <div class="listing-verify">
+                        <a href="#" class="btn precio-btn w-100"> <span class="pr-3">{{ page.status }}</span><i class="fa fa-dollar pr-3"></i>{{ page.precio | money }}</a>
+                    </div>
+
+                    <!-- Book A Table Widget -->
+                    <div class="detalles-generales mt-50">
+                      <h6>Detalles generales</h6>
+                      <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          <i class="fa fa-bed pr-3">_Num. Dormitorios</i>
+
+                          <span class="badge badge-primary badge-pill">{{page.dormitorios}}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          <i class="fa fa-bath pr-3">_Num. Baños</i>
+
+                          <span class="badge badge-primary badge-pill">{{page.banos}}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          <i class="fa fa-plus-square pr-3">_Superficie</i>
+
+                          <span class="badge badge-primary badge-pill">{{page.superficie}}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                          <i class="fa fa-car pr-3">_Estacionamiento</i>
+
+                          <span class="badge badge-primary badge-pill">{{page.estacionamiento}}</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form contact-form-widget mt-50">
+                        <h6>Solicita información ;)</h6>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="text" name="name" class="form-control" placeholder="Nombre">
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" name="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control" id="Message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn dorne-btn">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Single Listing Area End ***** -->
