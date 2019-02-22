@@ -1157,15 +1157,15 @@ button.btn--stroke:hover {
 
 .footer__subscribe #mc-form input[type="email"] {
   width: 100%;
-  height: 6.4rem;
-  font-size: 1.3rem;
+  height: 3rem;
+  font-size: 1.1rem;
   line-height: 3.2rem;
-  padding: 1.6rem 140px 1.6rem 32px;
+  padding: 1.6rem 5px 1.6rem 32px;
   background-color: rgba(255, 255, 255, 0.03);
   color: white;
   margin-bottom: 2rem;
   border: none;
-  border-radius: 15px 0 0 15px;
+  border-radius: 15px 15px 15px 15px;
 }
 
 .footer__subscribe #mc-form input[type="email"]:hover,
@@ -1186,6 +1186,7 @@ button.btn--stroke:hover {
 
 .footer__subscribe #mc-form input[type=submit] {
   font-family: 'Open Sans', sans-serif;
+  width: 100%;
   color: #FFFFFF;
   font-size: 1rem;
   font-weight: 600;
@@ -1193,10 +1194,10 @@ button.btn--stroke:hover {
   border-color: rgba(0, 144, 176, 0.9);
   margin-right: 0;
   padding: 0 20px 0 24px;
-  height: 6.4rem;
-  line-height: 6rem;
-  border-radius: 0 15px 15px 0;
-  position: absolute;
+  height: 3rem;
+  /*line-height: 6rem;*/
+  border-radius: 15px 15px 15px 15px;
+  /*position: absolute;*/
   top: 0;
   right: 0;
 }
