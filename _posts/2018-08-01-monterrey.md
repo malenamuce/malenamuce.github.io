@@ -10,6 +10,7 @@ zona: Costa Azul
 direccion: Monterrey 16, Lomas de Costa Azul, 39830 Acapulco, Gro.
 direccion_google: https://goo.gl/maps/QZk4ajGGFNk
 
+
 dormitorios: 2
 banos: 2
 pisos: 1
