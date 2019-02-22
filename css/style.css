@@ -1121,12 +1121,14 @@ button.btn--stroke:hover {
 .s-footer .display-2 {
   color: rgba(0, 144, 176, 0.9);
   margin-bottom: 1.6rem;
-  font-size: 3rem;
+  font-size: 2rem;
+  text-align: center;
   font-weight: 300;
 }
 
 .s-footer p.lead {
   color: rgba(255, 255, 255, 0.3);
+  text-align: center;
 }
 
 .footer__top [class*="col-"] {
