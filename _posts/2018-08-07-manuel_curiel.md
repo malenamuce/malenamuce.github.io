@@ -2,7 +2,7 @@
 layout: post
 author: Maria Elena
 title: MANUEL CURIEL
-precio: 4,500,000,00
+precio: "4,500,000.00 MXN"
 status: VENTA
 
 

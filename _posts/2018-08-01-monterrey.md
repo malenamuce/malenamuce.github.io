@@ -2,7 +2,7 @@
 layout: post
 author: Maria Elena
 title: COND. MONTERREY
-precio: 2,100,000,00
+precio: "2,100,000.00 MXN"
 status: VENTA
 
 

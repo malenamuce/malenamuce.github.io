@@ -2,7 +2,7 @@
 layout: post
 author: Maria Elena
 title: CALLE GUADALAJARA
-precio: 2,450,000,00
+precio: "2,450,000.00 MXN"
 status: VENTA
 
 

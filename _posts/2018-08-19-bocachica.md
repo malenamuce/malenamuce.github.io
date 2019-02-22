@@ -2,7 +2,7 @@
 layout: post
 author: Maria Elena
 title: CALLE BOCA CHICA
-precio: 2,500,000,00
+precio: "2,500,000.00 MXN"
 status: VENTA
 
 

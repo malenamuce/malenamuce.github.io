@@ -2,7 +2,7 @@
 layout: post
 author: Maria Elena
 title: AV. INSURGENTES
-precio: 3,600,000,00
+precio: "3,600,000.00 MXN"
 status: VENTA
 
 
