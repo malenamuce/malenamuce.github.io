@@ -14,7 +14,7 @@ body = ''
 # crear los tags
 for casa in casas_md:
     title = ""
-    url= "http://localhost:4000/" + casa.replace('-','/').replace('.md','.html')
+    url= "https://malenamuce.github.io/" + casa.replace('-','/').replace('.md','.html')
     tag = ""
     img_url = ""
     with open(casa) as file:
