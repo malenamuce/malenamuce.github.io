@@ -21,8 +21,8 @@ for casa in casas_md:
         for i, line in enumerate(file):
             if i == 3:
                 title = line.strip('title: ').strip('\n')
-            elif i in [4,5,8,9,13,14,15,16]:
-                tag = tag + line.replace('\n',' ')
+            elif i in [5,8,9,13,14,15,16]:
+                tag = tag + line.replace('\n',' ').strip('"')
             elif i == 23:
                 img_url = line.strip('  - ').strip('\n')
                 break
